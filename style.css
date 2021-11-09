@@ -1,0 +1,385 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: left;
+  width: 100%;
+  min-height: 100%;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-left: 165px;
+  font-size: 18px;
+  height: 768px;
+  color: #FFFFFF;
+  background: url(images/bg_full.png), rgba(198, 108, 73, 0.3);
+  background-size: cover;
+  background-blend-mode: soft-light;
+  background-repeat: no-repeat;
+}
+.header h1 {
+  font-size: 24px;
+}
+.header .name {
+  font-size: 64px;
+}
+.header .place {
+  padding-top: 10px;
+  font-size: 24px;
+}
+.header .latest_works {
+  text-decoration: underline;
+}
+.header nav {
+  display: flex;
+  justify-content: space-around;
+  width: 550px;
+  position: absolute;
+  top: 80px;
+  right: 166px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-left: 165px;
+  justify-content: space-evenly;
+  height: 360px;
+  padding-bottom: 50px;
+  text-align: justify;
+  font-size: 18px;
+  padding-right: 167px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-left: 165px;
+  height: 693px;
+  position: relative;
+  background-color: #FFFAF2;
+  text-align: left;
+  font-size: 18px;
+}
+.skills img {
+  width: 350px;
+  height: 340px;
+  margin-bottom: 100px;
+}
+.skills table {
+  height: 340px;
+  position: absolute;
+  right: 165px;
+  bottom: 145px;
+}
+.skills table th {
+  padding-right: 13px;
+}
+.skills table .padding {
+  padding-top: 22px;
+}
+.skills .front_skill {
+  margin-top: 22px;
+  width: 446px;
+  height: 24px;
+  background-color: #F5D6AB;
+}
+.skills .front_skill div {
+  display: block;
+  width: 64%;
+  height: 100%;
+  background-color: #C66C49;
+}
+.skills .design_skill {
+  margin-top: 22px;
+  width: 446px;
+  height: 24px;
+  background-color: #F5D6AB;
+}
+.skills .design_skill div {
+  display: block;
+  width: 78%;
+  height: 100%;
+  background-color: #C66C49;
+}
+.skills .research_skill {
+  margin-top: 22px;
+  width: 446px;
+  height: 24px;
+  background-color: #F5D6AB;
+}
+.skills .research_skill div {
+  display: block;
+  width: 85%;
+  height: 100%;
+  background-color: #C66C49;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-left: 165px;
+  justify-content: flex-start;
+  position: relative;
+  height: 822px;
+  font-size: 18px;
+}
+.portfolio h1 {
+  padding-top: 93px;
+}
+.portfolio h3 {
+  padding-top: 86px;
+}
+.portfolio p {
+  flex-grow: 5;
+  padding-top: 48px;
+  text-align: justify;
+  font-weight: 400;
+  max-width: 308px;
+}
+.portfolio .portfolio_photo {
+  position: absolute;
+  right: 135px;
+  bottom: 220px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 550px;
+}
+.portfolio .portfolio_photo img {
+  width: 93%;
+  padding-bottom: 15px;
+}
+.portfolio .portfolio_photo .column1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-height: 290px;
+}
+.portfolio .portfolio_photo .column2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-height: 290px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-left: 165px;
+  justify-content: center;
+  position: relative;
+  height: 528px;
+  background-color: #FFFAF2;
+  text-align: left;
+  font-size: 18px;
+}
+.contacts table {
+  padding-top: 50px;
+  width: 80%;
+  height: 40%;
+}
+.contacts p {
+  position: absolute;
+  top: 230px;
+  right: 347px;
+  width: 180px;
+}
+.contacts .arrow {
+  position: absolute;
+  right: 180px;
+  bottom: 50px;
+  width: 15px;
+  height: 15px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-135deg);
+}
+
+@media screen and (max-width: 900px) {
+  .large {
+    display: none;
+  }
+
+  .small {
+    display: inherit;
+  }
+
+  body {
+    text-align: center;
+  }
+
+  .header {
+    align-items: center;
+    height: 275px;
+    padding-left: 0;
+    background: url(images/bg.png), rgba(198, 108, 73, 0.4);
+    text-align: center;
+  }
+  .header .name {
+    font-size: 20px;
+  }
+  .header .place {
+    font-size: 13px;
+  }
+  .header .latest_works {
+    font-size: 13px;
+  }
+  .header nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 34px;
+    top: 39px;
+  }
+  .hamburger div {
+    width: 24px;
+    height: 2px;
+    background-color: #FFFFFF;
+  }
+
+  .about {
+    align-items: center;
+    font-size: 12px;
+    height: 293px;
+    padding: 10px 30px;
+  }
+
+  .skills {
+    align-items: center;
+    padding-left: 0;
+    height: 617px;
+    font-size: 12px;
+  }
+  .skills img {
+    width: 224px;
+    height: 218px;
+    margin-bottom: 0;
+  }
+  .skills table {
+    position: initial;
+    padding-left: 34px;
+    padding-right: 32px;
+    height: 269px;
+  }
+  .skills table th {
+    padding-right: 13px;
+  }
+  .skills table .padding {
+    padding-top: 22px;
+  }
+  .skills .front_skill {
+    width: 211px;
+    height: 18px;
+  }
+  .skills .design_skill {
+    width: 211px;
+    height: 18px;
+  }
+  .skills .research_skill {
+    width: 211px;
+    height: 18px;
+  }
+
+  .portfolio {
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 0;
+    height: 404px;
+    font-size: 12px;
+  }
+  .portfolio h1 {
+    padding: 0;
+  }
+  .portfolio h3 {
+    padding: 0;
+  }
+  .portfolio p {
+    padding: 0;
+    flex-grow: 0;
+    text-align: center;
+    font-weight: 400;
+    max-width: 308px;
+  }
+  .portfolio .portfolio_photo {
+    position: initial;
+    max-width: 308px;
+  }
+  .portfolio .portfolio_photo .column1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-height: 290px;
+  }
+  .portfolio .portfolio_photo .column2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-height: 290px;
+  }
+
+  .contacts {
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 0;
+    position: relative;
+    height: 360px;
+    background-color: #FFFAF2;
+    text-align: left;
+    font-size: 14px;
+  }
+  .contacts table {
+    padding-left: 8px;
+    width: 90%;
+    height: 65%;
+  }
+  .contacts p {
+    position: initial;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    align-self: flex-start;
+    max-width: 140px;
+  }
+  .contacts .arrow {
+    position: absolute;
+    right: 32px;
+    bottom: 30px;
+    width: 15px;
+    height: 15px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-135deg);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -168,6 +168,31 @@ body{
     }
 }
 
+.arrow {
+    position: absolute;
+    right: 180px;
+    bottom: 50px;
+    width: 15px;
+    height: 15px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-135deg);
+}
+
+.left {
+    left: 170px;
+    bottom: 220px;
+    transform: rotate(135deg);
+}
+
+.right {
+    left: 200px;
+    bottom: 220px;
+    transform: rotate(-45deg);
+}
+
 .contacts {
     @include flex_for_page;
     justify-content: center;
@@ -187,21 +212,12 @@ body{
         right: 347px;
         width: 180px;
     }
-    .arrow {
-        position: absolute;
-        right: 180px;
-        bottom: 50px;
-        width: 15px;
-        height: 15px;
-        border: solid black;
-        border-width: 0 2px 2px 0;
-        display: inline-block;
-        padding: 3px;
-        transform: rotate(-135deg);
-    }
 }
 
 @media screen and (max-width: 900px) {
+    .left, .right {
+        display: none;
+    }
     $screen_size: 900px;
     .large {
         display: none;

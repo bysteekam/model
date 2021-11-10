@@ -180,6 +180,31 @@ body {
   max-height: 290px;
 }
 
+.arrow {
+  position: absolute;
+  right: 180px;
+  bottom: 50px;
+  width: 15px;
+  height: 15px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-135deg);
+}
+
+.left {
+  left: 170px;
+  bottom: 220px;
+  transform: rotate(135deg);
+}
+
+.right {
+  left: 200px;
+  bottom: 220px;
+  transform: rotate(-45deg);
+}
+
 .contacts {
   display: flex;
   flex-direction: column;
@@ -204,20 +229,12 @@ body {
   right: 347px;
   width: 180px;
 }
-.contacts .arrow {
-  position: absolute;
-  right: 180px;
-  bottom: 50px;
-  width: 15px;
-  height: 15px;
-  border: solid black;
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: rotate(-135deg);
-}
 
 @media screen and (max-width: 900px) {
+  .left, .right {
+    display: none;
+  }
+
   .large {
     display: none;
   }
@@ -369,16 +386,8 @@ body {
     max-width: 140px;
   }
   .contacts .arrow {
-    position: absolute;
     right: 32px;
     bottom: 30px;
-    width: 15px;
-    height: 15px;
-    border: solid black;
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    padding: 3px;
-    transform: rotate(-135deg);
   }
 }
 

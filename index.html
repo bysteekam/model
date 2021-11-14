@@ -12,20 +12,20 @@
 </head>
 <body>
     <div class="header" id="home">
-        <nav>
-            <p>Home</p>
-            <p>About</p>
-            <p>Skills</p>
-            <p>Portfolio</p>
-            <p>Contact</p>
-        </nav>
-        <div class="title">
+        <div class="header_main">
             <div class="hamburger">
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
-            <p>Portofolio</p>
+            <p class="title">Portofolio</p>
+            <nav>
+                <p>Home</p>
+                <p>About</p>
+                <p>Skills</p>
+                <p>Portfolio</p>
+                <p>Contact</p>
+            </nav>
         </div>
         <div class="header_center">
             <p class="name">Hi, It’s Théophile Seyrig</p>
@@ -36,11 +36,14 @@
     </div>
     <div class="about" id="about">
         <h1>About</h1>
-        <p>Lorem ipsum dolor sit amet, Arcu, sed nisi, mi, arcu libero phasellus tincidunt. Rhoncus, diam penatibus aliquet tellus, in rutrum augue. Pellentesque senectus risus consectetur et sed purus sed. Consectetur adipiscing elit. Egestas porttitor nulla nulla egestas odio pharetra egestas aliquet mollis.</p>
-        <p>Arcu, sed nisi, mi, arcu libero phasellus tincidunt. Rhoncus, diam penatibus aliquet tellus, in rutrum augue. Pellentesque senectus risus consectetur et sed purus sed. Consectetur adipiscing elit. Egestas porttitor nulla nulla egestas odio pharetra egestas aliquet mollis. diam penatibus aliquet tellus, in rutrum augue. Pellentesque.</p>
+        <section>
+            <p>Lorem ipsum dolor sit amet, Arcu, sed nisi, mi, arcu libero phasellus tincidunt. Rhoncus, diam penatibus aliquet tellus, in rutrum augue. Pellentesque senectus risus consectetur et sed purus sed. Consectetur adipiscing elit. Egestas porttitor nulla nulla egestas odio pharetra egestas aliquet mollis.</p>
+            <p>Arcu, sed nisi, mi, arcu libero phasellus tincidunt. Rhoncus, diam penatibus aliquet tellus, in rutrum augue. Pellentesque senectus risus consectetur et sed purus sed. Consectetur adipiscing elit. Egestas porttitor nulla nulla egestas odio pharetra egestas aliquet mollis. diam penatibus aliquet tellus, in rutrum augue. Pellentesque.</p>
+        </section>
     </div>
     <div class="skills" id="skills">
         <h1>Skills</h1>
+        <section class="skills_content">
             <img src="images/man.png">
             <table>
                 <tr><th class="table_start">Profile</th><td class="table_start">UI / UX Engineer, Front-end Developer</td></tr>
@@ -51,11 +54,17 @@
                 <tr><th class="padding">UX Research</th><td><div class="research_skill"><div></div></div></td></tr>
                 <tr><th>Tools</th><td>Paper, Pen, Balsamiq</td></tr>
             </table>
+        </section>
     </div>
     <div class="portfolio" id="portfolio">
-        <h1>Portfolio</h1>
-        <h3>UX Research</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac dictum nibh nam odio cursus id. Diam massa semper a tincidunt cursus ultricies lectus eget urna.</p>
+        <div>
+            <h1>Portfolio</h1>
+            <h3>UX Research</h3>
+        </div>
+        <div class="portfolio_text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="indenty"> Ac dictum nibh nam odio cursus id. Diam massa semper a tincidunt cursus ultricies lectus eget urna.</p>
+        </div>
         <div class="portfolio_photo">
             <div class="column1">
                 <img src="images/photo1.png">
@@ -70,15 +79,26 @@
         <div class="arrow right"></div>
     </div>
     <div class="contacts" id="contacts">
-        <h1>Get in Touch</h1>
-        <table>
-            <tr><td>Dribbble</td><td>LinkedIn</td></tr>
-            <tr><td>Behance</td><td>Facebook</td></tr>
-            <tr><td>CodePen</td><td>Instagram</td></tr>
-            <tr><td>GitHub</td><td>Twitter</td></tr>
-            <tr><td>Medium</td></tr>
-        </table>
-        <p>seyrig@mailme.com + 55 6645 665544</p>
+        <p class="footer_title">Get in Touch</p>
+        <div class="contacts_list">
+            <ul>
+                <li>Dribbble</li>
+                <li>Behance</li>
+                <li>CodePen</li>
+                <li>GitHub</li>
+                <li>Medium</li>
+            </ul>
+            <ul>
+                <li>LinkedIn</li>
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Twitter</li>
+            </ul>
+        </div>
+        <div class="mail">
+            <p>seyrig@mailme.com</p>
+            <p>+ 55 6645 665544</p>
+        </div>
         <a href="#home" class="arrow"></a>
     </div>
 </body>

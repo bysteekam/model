@@ -20,16 +20,21 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  padding-left: 165px;
+  padding-left: 174px;
+  height: 810px;
   font-size: 18px;
-  height: 768px;
   color: #FFFFFF;
   background: url(images/bg_full.png), rgba(198, 108, 73, 0.3);
   background-size: cover;
   background-blend-mode: soft-light;
   background-repeat: no-repeat;
 }
-.header h1 {
+.header .header_main {
+  padding-top: 3%;
+  display: flex;
+  width: 100%;
+}
+.header .title {
   font-size: 24px;
 }
 .header .header_center {
@@ -38,21 +43,22 @@ body {
   justify-content: space-between;
 }
 .header .header_center .name {
+  padding-top: 5%;
   font-size: 64px;
 }
 .header .header_center .place {
+  padding-top: 5%;
   font-size: 24px;
 }
 .header .latest_works {
+  padding-bottom: 14%;
   text-decoration: underline;
 }
 .header nav {
+  padding-left: 35%;
   display: flex;
   justify-content: space-around;
-  width: 550px;
-  position: absolute;
-  top: 80px;
-  right: 166px;
+  width: 620px;
 }
 
 .about {
@@ -60,13 +66,20 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  padding-left: 165px;
-  justify-content: space-evenly;
-  height: 360px;
-  padding-bottom: 50px;
+  padding-left: 174px;
+  justify-content: center;
+  padding-bottom: 72px;
+  padding-right: 167px;
+  height: 480px;
   text-align: justify;
   font-size: 18px;
-  padding-right: 167px;
+  line-height: 32px;
+}
+.about h1 {
+  padding-bottom: 32px;
+}
+.about p {
+  padding-top: 32px;
 }
 
 .skills {
@@ -74,7 +87,8 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  padding-left: 165px;
+  padding-left: 174px;
+  padding-top: 48px;
   height: 693px;
   position: relative;
   background-color: #FFFAF2;
@@ -86,24 +100,31 @@ body {
   height: 340px;
   margin-bottom: 100px;
 }
+.skills .skills_content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 .skills table {
+  padding-right: 15%;
+  font-size: 20px;
   height: 340px;
-  position: absolute;
-  right: 165px;
-  bottom: 145px;
+}
+.skills table .table_start {
+  padding-bottom: 40px;
 }
 .skills table th {
   padding-right: 13px;
 }
 .skills table .padding {
-  padding-top: 22px;
+  padding-right: 20px;
 }
 .skills .front_skill {
   margin-top: 24px;
-  margin-bottom: 16px;
   width: 446px;
   height: 24px;
   background-color: #F5D6AB;
+  margin-top: 0;
 }
 .skills .front_skill div {
   display: block;
@@ -113,10 +134,10 @@ body {
 }
 .skills .design_skill {
   margin-top: 24px;
-  margin-bottom: 16px;
   width: 446px;
   height: 24px;
   background-color: #F5D6AB;
+  margin-top: 0;
 }
 .skills .design_skill div {
   display: block;
@@ -126,10 +147,10 @@ body {
 }
 .skills .research_skill {
   margin-top: 24px;
-  margin-bottom: 16px;
   width: 446px;
   height: 24px;
   background-color: #F5D6AB;
+  margin-top: 0;
 }
 .skills .research_skill div {
   display: block;
@@ -143,7 +164,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  padding-left: 165px;
+  padding-left: 174px;
   justify-content: flex-start;
   position: relative;
   height: 822px;
@@ -155,7 +176,7 @@ body {
 .portfolio h3 {
   padding-top: 86px;
 }
-.portfolio p {
+.portfolio .portfolio_text {
   flex-grow: 5;
   padding-top: 48px;
   text-align: justify;
@@ -165,34 +186,36 @@ body {
 .portfolio .portfolio_photo {
   position: absolute;
   right: 135px;
-  bottom: 220px;
+  bottom: 179px;
   display: flex;
   justify-content: space-around;
-  width: 550px;
+  width: 650px;
 }
 .portfolio .portfolio_photo img {
-  width: 93%;
+  width: 100%;
   padding-bottom: 15px;
 }
 .portfolio .portfolio_photo .column1 {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
   max-height: 290px;
 }
 .portfolio .portfolio_photo .column2 {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
   max-height: 290px;
 }
 
 .arrow {
   position: absolute;
-  right: 180px;
-  bottom: 50px;
-  width: 15px;
-  height: 15px;
+  right: 192px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
   border: solid black;
   border-width: 0 2px 2px 0;
   display: inline-block;
@@ -202,13 +225,13 @@ body {
 
 .left {
   left: 170px;
-  bottom: 220px;
+  bottom: 140px;
   transform: rotate(135deg);
 }
 
 .right {
   left: 200px;
-  bottom: 220px;
+  bottom: 140px;
   transform: rotate(-45deg);
 }
 
@@ -217,7 +240,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  padding-left: 165px;
+  padding-left: 174px;
   justify-content: center;
   position: relative;
   height: 528px;
@@ -225,14 +248,31 @@ body {
   text-align: left;
   font-size: 18px;
 }
-.contacts table {
-  padding-top: 50px;
-  width: 80%;
-  height: 40%;
+.contacts .footer_title {
+  padding-top: 48px;
+  font-weight: 600;
+  font-size: 24px;
 }
-.contacts p {
+.contacts .contacts_list {
+  display: flex;
+  min-width: 320px;
+  font-size: 18px;
+}
+.contacts .contacts_list ul {
+  margin-top: 40px;
+  margin-right: 324px;
+  list-style: none;
+}
+.contacts .contacts_list li {
+  margin-top: 19px;
+}
+.contacts .mail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60px;
   position: absolute;
-  top: 230px;
+  top: 238px;
   right: 347px;
   width: 180px;
 }
@@ -265,6 +305,9 @@ body {
     background-repeat: no-repeat;
     text-align: center;
   }
+  .header .header_main {
+    justify-content: center;
+  }
   .header .header_center .name {
     padding-top: 10px;
     font-size: 20px;
@@ -281,7 +324,7 @@ body {
     display: none;
   }
 
-  .title p {
+  .title {
     font-weight: bolder;
     font-size: 24px;
     line-height: 26px;
@@ -307,7 +350,14 @@ body {
     align-items: center;
     font-size: 12px;
     height: 278px;
+    line-height: initial;
     padding: 10px 30px 10px 34px;
+  }
+  .about h1 {
+    padding-bottom: 24px;
+  }
+  .about p {
+    padding-top: 16px;
   }
 
   .skills {
@@ -318,23 +368,26 @@ body {
     height: 588px;
     font-size: 12px;
   }
+  .skills .skills_content {
+    align-items: center;
+    flex-direction: column;
+  }
   .skills img {
     width: 224px;
     height: 218px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
   .skills table {
-    position: initial;
-    padding-left: 34px;
-    padding-right: 32px;
-    height: 269px;
+    padding-left: 44px;
+    font-size: 12px;
+    max-height: 269px;
   }
   .skills table .table_start {
     padding-bottom: 20px;
   }
   .skills table th {
-    padding-right: 14px;
-    width: 100px;
+    padding-right: 0;
+    min-width: 80px;
   }
   .skills table .padding {
     padding-top: 22px;
@@ -355,31 +408,42 @@ body {
   .portfolio {
     justify-content: space-evenly;
     align-items: center;
+    justify-items: center;
     padding-left: 0;
     height: 404px;
     font-size: 12px;
   }
   .portfolio h1 {
-    padding: 0;
+    padding: 16px 0 0 0;
   }
   .portfolio h3 {
-    padding: 0;
+    padding: 24px 0 0 0;
   }
-  .portfolio p {
-    padding: 0;
+  .portfolio .portfolio_text {
+    padding: 16px 0 0 0;
     flex-grow: 0;
     text-align: center;
     font-weight: normal;
-    max-width: 320px;
+    max-width: 308px;
+  }
+  .portfolio .portfolio_text .indenty {
+    text-align: center;
+    padding: 0;
+    text-indent: 2px;
   }
   .portfolio .portfolio_photo {
     display: flex;
+    justify-items: center;
     position: initial;
-    max-width: 306px;
+    padding-top: 20px;
+    max-width: 318px;
+  }
+  .portfolio .portfolio_photo img {
+    width: 94%;
   }
 
   .contacts {
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     padding-left: 0;
     position: relative;
@@ -388,21 +452,42 @@ body {
     text-align: left;
     font-size: 14px;
   }
-  .contacts table {
-    padding-left: 8px;
-    width: 90%;
-    height: 65%;
+  .contacts .footer_title {
+    padding-top: 32px;
+    font-weight: 600;
+    font-size: 24px;
   }
-  .contacts p {
+  .contacts .contacts_list {
+    display: flex;
+    min-width: 320px;
+    font-size: 14px;
+    padding-left: 34px;
+    padding-bottom: 24px;
+  }
+  .contacts .contacts_list ul {
+    margin-top: 0;
+    margin-right: 100px;
+    list-style: none;
+  }
+  .contacts .contacts_list li {
+    margin-top: 19px;
+  }
+  .contacts .mail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40px;
     position: initial;
-    padding-left: 30px;
-    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-bottom: 42px;
     align-self: flex-start;
     max-width: 140px;
   }
   .contacts .arrow {
+    height: 10px;
+    width: 10px;
     right: 32px;
-    bottom: 30px;
+    bottom: 56px;
   }
 }
 

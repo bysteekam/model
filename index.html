@@ -11,73 +11,78 @@
     <title>Model</title>
 </head>
 <body>
-    <div class="header" id="home">
-        <div class="header_main">
-            <div class="hamburger">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <p class="title">Portofolio</p>
-            <nav>
-                <p>Home</p>
-                <p>About</p>
-                <p>Skills</p>
-                <p>Portfolio</p>
-                <p>Contact</p>
-            </nav>
+    <article class="header" id="home">
+        <div class="header_content">
+            <section class="header_main">
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <p class="header_title">Portofolio</p>
+                <nav>
+                    <p>Home</p>
+                    <p>About</p>
+                    <p>Skills</p>
+                    <p>Portfolio</p>
+                    <p>Contact</p>
+                </nav>
+            </section>
+            <section class="header_center">
+                <p class="header__center_content_first">Hi, It’s Théophile Seyrig</p>
+                <p class="header__center_content_second">Designer from Porto, Portugal</p>
+            </section>
+            <p class="latest_works">Latest works</p>
         </div>
-        <div class="header_center">
-            <p class="name">Hi, It’s Théophile Seyrig</p>
-            <p class="place">Designer from Porto, Portugal</p>
+    </article>
+    <article class="about" id="about">
+        <div class="about_content">
+            <h1>About</h1>
+            <section>
+                <p>Lorem ipsum dolor sit amet, Arcu, sed nisi, mi, arcu libero phasellus tincidunt. Rhoncus, diam penatibus aliquet tellus, in rutrum augue. Pellentesque senectus risus consectetur et sed purus sed. Consectetur adipiscing elit. Egestas porttitor nulla nulla egestas odio pharetra egestas aliquet mollis.</p>
+                <p>Arcu, sed nisi, mi, arcu libero phasellus tincidunt. Rhoncus, diam penatibus aliquet tellus, in rutrum augue. Pellentesque senectus risus consectetur et sed purus sed. Consectetur adipiscing elit. Egestas porttitor nulla nulla egestas odio pharetra egestas aliquet mollis. diam penatibus aliquet tellus, in rutrum augue. Pellentesque.</p>
+            </section>
         </div>
-        <p class="latest_works">Latest works</p>
-        
-    </div>
-    <div class="about" id="about">
-        <h1>About</h1>
-        <section>
-            <p>Lorem ipsum dolor sit amet, Arcu, sed nisi, mi, arcu libero phasellus tincidunt. Rhoncus, diam penatibus aliquet tellus, in rutrum augue. Pellentesque senectus risus consectetur et sed purus sed. Consectetur adipiscing elit. Egestas porttitor nulla nulla egestas odio pharetra egestas aliquet mollis.</p>
-            <p>Arcu, sed nisi, mi, arcu libero phasellus tincidunt. Rhoncus, diam penatibus aliquet tellus, in rutrum augue. Pellentesque senectus risus consectetur et sed purus sed. Consectetur adipiscing elit. Egestas porttitor nulla nulla egestas odio pharetra egestas aliquet mollis. diam penatibus aliquet tellus, in rutrum augue. Pellentesque.</p>
-        </section>
-    </div>
-    <div class="skills" id="skills">
+    </article>
+    <article class="skills" id="skills">
         <h1>Skills</h1>
         <section class="skills_content">
             <img src="images/man.png">
             <table>
                 <tr><th class="table_start">Profile</th><td class="table_start">UI / UX Engineer, Front-end Developer</td></tr>
-                <tr><th class="padding">Front-end Dev</th><td><div class="front_skill"><div></div></div></td></tr>
+                <tr><th class="table_padding">Front-end Dev</th><td><div class="front_skill"><div></div></div></td></tr>
                 <tr><th>Tools</th><td>HTML, CSS, JS, Bootstrap, React</td></tr>
-                <tr><th class="padding">UI Design</th><td><div class="design_skill"><div></div></div></td></tr>
+                <tr><th class="table_padding">UI Design</th><td><div class="design_skill"><div></div></div></td></tr>
                 <tr><th>Tools</th><td>Adobe PS, AI, XD, Figma, InVision</td></tr>
-                <tr><th class="padding">UX Research</th><td><div class="research_skill"><div></div></div></td></tr>
+                <tr><th class="table_padding">UX Research</th><td><div class="research_skill"><div></div></div></td></tr>
                 <tr><th>Tools</th><td>Paper, Pen, Balsamiq</td></tr>
             </table>
         </section>
-    </div>
-    <div class="portfolio" id="portfolio">
-        <div>
-            <h1>Portfolio</h1>
-            <h3>UX Research</h3>
-        </div>
-        <div class="portfolio_text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p class="indenty"> Ac dictum nibh nam odio cursus id. Diam massa semper a tincidunt cursus ultricies lectus eget urna.</p>
-        </div>
-        <div class="portfolio_photo">
-            <div class="column1">
+    </article>
+    <article class="portfolio" id="portfolio">
+        <section class="portfolio_content">
+            <section class="portfolio_headers">
+                <h1>Portfolio</h1>
+                <h5>UX Research</h5>
+            </section>
+            <section class="portfolio_text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="indenty"> Ac dictum nibh nam odio cursus id. Diam massa semper a tincidunt cursus ultricies lectus eget urna.</p>
+            </section>
+        </section>
+        <section class="portfolio_photo">
+            <div class="portfolio_photo_column">
                 <img src="images/photo1.png">
                 <img src="images/photo3.png">
             </div>
-            <div class="column2">
+            <div class="portfolio_photo_column">
                 <img src="images/photo2.png">
                 <img src="images/photo4.png">
             </div>
-        </div>
+        </section>
         <div class="arrow left"></div>
         <div class="arrow right"></div>
-    </div>
+    </article>
     <div class="contacts" id="contacts">
         <p class="footer_title">Get in Touch</p>
         <div class="contacts_list">
